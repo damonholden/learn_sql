@@ -1,4 +1,4 @@
-# SQL Lesson 2: Queries with constraints
+# SQL Lesson 2: Queries with constraints (Pt. 1)
 
 Basic `SELECT` statements can be useful for quickly viewing tables, but when tables reach large amounts of rows, it is difficult to read through that information.
 
