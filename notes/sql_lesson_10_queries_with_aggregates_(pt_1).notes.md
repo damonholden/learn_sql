@@ -18,3 +18,16 @@ The following are common SQL aggregate functions:
 - `MAX(column)`: Finds the largest numerical value in the specified column for all rows in the group.
 - `AVG(column)`: Finds the average numerical value in the specified column for all rows in the group.
 - `SUM(column)`: Finds the sum of all numerical values in the specified column for all rows in the group.
+
+## Grouped aggregate functions
+
+In addition to aggregating across all rows, you can also apply the same aggregate functions to individual groups of data using the `GROUP BY` clause:
+
+```SQL
+SELECT AGG_FUNC(column_or_expression) AS aggregate_description, …
+FROM mytable
+WHERE constraint_expression
+GROUP BY column;
+```
+
+The `GROUP BY` clause works by grouping rows that have the same value in the column specified.
